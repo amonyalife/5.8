@@ -78,11 +78,14 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin {
           ],
         ),
       ),
-      drawer: Drawer(
+    drawer: Drawer(
         child: Column(
+           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            Column(children: [
             DrawerHeader(
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   CircleAvatar(
                     radius: 60,
@@ -106,9 +109,14 @@ class _HomePage extends State<HomePage> with SingleTickerProviderStateMixin {
                 leading: Icon(Icons.attach_money),
                 title: Text('attach_money'),
                 trailing: Icon(Icons.arrow_forward)),
+                ],),
             Container(
-              margin: EdgeInsets.only(top: 400.0),
+              color: Colors.red,
+            
+              
               child: Row(
+
+                
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   ElevatedButton(
